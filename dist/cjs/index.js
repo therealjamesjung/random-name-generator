@@ -23,6 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.generateRandomNickName = void 0;
 const data = __importStar(require("./data.json"));
 function generateRandomNickName() {
     const { colors, foods } = data;
@@ -30,3 +31,4 @@ function generateRandomNickName() {
     const randomFood = foods[Math.floor(Math.random() * foods.length)];
     return `${randomColor} ${randomFood}`;
 }
+exports.generateRandomNickName = generateRandomNickName;
