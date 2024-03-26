@@ -1,0 +1,27 @@
+{
+  "name": "random-nickname-generator",
+  "version": "1.0.0",
+  "author": "James Jung",
+  "description": "랜덤 밴드이름 생성기",
+  "main": "dist/cjs/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && ./fixup.sh"
+  },
+  "keywords": [
+    "random",
+    "name"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  },
+  "module": "dist/mjs/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  }
+}
