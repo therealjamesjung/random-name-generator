@@ -1,18 +1,36 @@
 {
   "name": "random-korean-nickname-generator",
-  "version": "1.0.1",
-  "author": "James Jung",
-  "description": "랜덤 닉네임 생성기",
-  "main": "src/index.js",
-  "license": "MIT",
+  "version": "1.0.3",
+  "description": "랜덤 한글 닉네임 생성기",
+  "main": "index.js",
   "scripts": {
-    "publish": "npm publish"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealjamesjung/random-name-generator.git"
   },
   "keywords": [
     "random",
-    "name",
-    "nickname",
+    "korean-nickname",
     "generator",
-    "korean-nickname"
-  ]
+    "랜덤",
+    "닉네임",
+    "생성기"
+  ],
+  "type": "module",
+  "author": "James Jung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/therealjamesjung/random-name-generator/issues"
+  },
+  "homepage": "https://github.com/therealjamesjung/random-name-generator#readme",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  }
 }

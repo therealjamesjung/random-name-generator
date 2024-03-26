@@ -1,0 +1,1 @@
+declare module 'random-korean-nickname-generator'

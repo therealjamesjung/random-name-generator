@@ -1,4 +1,4 @@
-import * as data from "./data.json";
+import data from "./data.json" assert { type: "json" };
 
 export function generateRandomNickName() {
   const { colors, foods } = data;
@@ -6,3 +6,5 @@ export function generateRandomNickName() {
   const randomFood = foods[Math.floor(Math.random() * foods.length)];
   return `${randomColor} ${randomFood}`;
 }
+
+console.log(generateRandomNickName());
