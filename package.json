@@ -1,6 +1,6 @@
 {
   "name": "random-korean-nickname-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "James Jung",
   "description": "랜덤 닉네임 생성기",
   "main": "dist/cjs/index.js",
